@@ -7,10 +7,10 @@ jobs:
     name: Run Bandit Scan
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout out
+    - name: Checkout code
       uses: actions/checkout@v2
     - name: Setup Python
-      uses: sctions/setup-python@v2
+      uses: actions/setup-python@v2
       with:
         python-version: 3.8
     - name: Install Bandit
