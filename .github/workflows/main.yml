@@ -38,7 +38,7 @@ jobs:
     - name: Docker scout scan
       uses: docker/scout-action@v1.18.2
       with:
-        #registry-user: ${{ secrets.REPO_USER }}
-        #registry-password: ${{ secrets.REPO_PWD }}
+        dockerhub-user: ${{ secrets.REPO_USER }}
+        dockerhub-password: ${{ secrets.REPO_PWD }}
         command: quickview,cves
     
